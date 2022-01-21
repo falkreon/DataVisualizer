@@ -29,6 +29,7 @@ version = "1.0.0";
 
 repositories {
 	mavenCentral()
+	maven { url 'https://repo.unascribed.com' }
 }
 
 java {
@@ -130,6 +131,8 @@ dependencies {
 	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine';
 	
 	compileOnly group: "com.google.code.findbugs", name: "jsr305", version: "3.0.2";
+	
+	implementation 'com.playsawdust:toolbox:2.1.4';
 }
 
 signing {
